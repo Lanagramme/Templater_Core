@@ -1,7 +1,6 @@
 const Template = `<div id="lmt" onclick="Test" style="color: red; font-size: 10px;"><p class="text">This is a test<label for="username">is a label</label></p></div>`
 
-const JSX = {}
-JSX.converter = (template) => {
+const JSX = (template) => {
 	let paragraph = template
 
 	paragraph = paragraph.replace(" class=", " className=")
